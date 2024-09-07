@@ -74,7 +74,7 @@ text-shadow:
 }
 
 .upcoming {
-	background: url('Images/gamelogo.webp') no-repeat center center; 
+	background: url('gamelogo.webp') no-repeat center center; 
   background-size: cover;
   display: block; 
   margin: 80px auto; 
@@ -263,7 +263,7 @@ height: 160px;
 /* FOR PC/LAPTOP */
 @media (min-height: 500px) and (min-width: 800px) {
 	.upcoming {
-	background: url('Images/gamelogo.webp') no-repeat center center; 
+	background: url('gamelogo.webp') no-repeat center center; 
   background-size: cover;
   display: block; 
   margin: 80px auto; 
