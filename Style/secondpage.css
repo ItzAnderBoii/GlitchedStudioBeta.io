@@ -1,0 +1,77 @@
+body {
+	background: white;
+	animation: BodyIntro 1.5s;
+}
+
+.message {
+	margin: 290px auto;
+}
+
+.message h1 {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 25px;
+}
+
+.message b {
+	display: block;
+	margin: -15px auto;
+	text-align: center;
+	color: gray;
+	font-family: verdana;
+	font-size: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* anim parts */
+@keyframes BodyIntro {
+	0% {
+		background: black;
+	}
+	100% {
+		background: white;
+	}
+}
+
+/* responsive stuff */
+
+/*Mobile, Tablet*/
+@media (min-width: 200px) and (max-width: 2800px) {
+	.message h1 {
+		font-size: 20px;
+	}
+
+	.message b {
+		font-size: 10px;
+	}
+}
+
+/* For Laptops, Pc's */
+@media (min-width: 1272px) and (max-width: 5120px) {
+
+	.message h1 {
+		font-size: 25px;
+		transition: 1s;
+	}
+
+	.message b {
+		font-size: 15px;
+		transition: 1s;
+	}
+}

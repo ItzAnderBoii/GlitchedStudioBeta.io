@@ -1,0 +1,49 @@
+body {
+	background: black;
+}
+
+.loading{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 250px auto;
+	font-family: Verdana;
+	font-size: 90px;
+	color: white;
+}
+
+.dot {
+	animation: anim 1.5s infinite;
+}
+
+.dot-1 {
+	animation-delay: 0;
+}
+
+.dot-2 {
+	animation-delay: 0.5s;
+}
+
+.dot-3 {
+	animation-delay: 1s;
+}
+
+
+
+@keyframes anim {
+   0% {
+   	transform: scale(1.0);
+   	opacity: 1;
+   }
+
+   50% {
+   	transform: scale(1.1);
+   	opacity: 0.5;
+   }
+
+   100% {
+   	transform: scale(1.0);
+   	opacity: 1;
+   }
+
+   }
