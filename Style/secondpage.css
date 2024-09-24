@@ -1,77 +1,131 @@
 body {
-	background: white;
-	animation: BodyIntro 1.5s;
+	background: black;
 }
 
-.message {
-	margin: 290px auto;
+.watermark {
+	display: flex;
+	margin: 40px 20px auto;
+	color: white;
+    font-size: 15px;
+    font-family: Verdana;
+    animation: Theintroanim 2s 
 }
 
-.message h1 {
-	text-align: center;
-	font-family: Verdana;
-	font-size: 25px;
+.first-page {
+	margin: 200px auto;
 }
 
-.message b {
+.first-page h1 {
+	color: white; 
 	display: block;
-	margin: -15px auto;
 	text-align: center;
-	color: gray;
-	font-family: verdana;
+	margin: auto auto;
+	font-size: 40px;
+	font-family: 'monospace', sans-serif;
+	animation: Theintroanim 2s  ;
+
+
+
+}
+
+.first-page p {
+	margin: auto auto;
+	text-align: center;
 	font-size: 15px;
+	font-family: 'monospace', sans-serif;
+	color: white;
+	animation: Theintroanim 2.5s  ;
+}
 
+.first-page a {
+	display: block;
+	margin: 50px auto;
+	color: white;
+	border: 1px solid white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 15px;
+	width: 30%;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: Verdana;
+	text-align: center;
+	transition: 1s;
+	animation: Theintroanim 2s  ;
+}
+
+.first-page a:hover {
+	transition: 1s;
+	background: white;
+	color: black;
+}
+
+.dot {
+	display: inline-block;
+	animation: dotsAnim 1s infinite ;
+}
+
+.firstdot {
+	animation-delay: 0s;
+}
+
+.seconddot {
+	animation-delay: 0.5s;
+}
+
+.thirddot {
+	animation-delay: 1s;
+}
+
+.second-page {
+	margin: 400px auto;
+	background: rgb(5, 5, 5, 1) center center;
+	box-shadow: 0 0 2px white,
+	0 0 2px rgb(20,20,20,1)
+	0 0 2px rgb(20,20,20,1)
+	0 0 2px rgb(20,20,20,1);
+	background-size: cover;
+	height: 300px;
+	width: 80%;
+	border-radius: 15px;
+	animation: Theintroanim 2s  ;
+}
+
+.second-page h1 {
+	display: block;
+	text-align: center;
+	padding-top: 150px;
+	color: white;
+	font-size: 15px;
+	font-family: monospace;
 }
 
 
+/* Animations */
+@keyframes Theintroanim {
+	from {
+		opacity: 0;
+	}
 
+	to {
+		opacity: 1;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* anim parts */
-@keyframes BodyIntro {
+@keyframes dotsAnim {
 	0% {
-		background: black;
+		transform: scale(1.0);
+		opacity: 1;
 	}
+
+	50% {
+		transform: scale(1.1);
+		opacity: 0.5;
+	}
+
 	100% {
-		background: white;
+		transform: scale(1.0);
+		opacity: 1;
 	}
 }
 
-/* responsive stuff */
-
-/*Mobile, Tablet*/
-@media (min-width: 200px) and (max-width: 2800px) {
-	.message h1 {
-		font-size: 20px;
-	}
-
-	.message b {
-		font-size: 10px;
-	}
-}
-
-/* For Laptops, Pc's */
-@media (min-width: 1272px) and (max-width: 5120px) {
-
-	.message h1 {
-		font-size: 25px;
-		transition: 1s;
-	}
-
-	.message b {
-		font-size: 15px;
-		transition: 1s;
-	}
-}
