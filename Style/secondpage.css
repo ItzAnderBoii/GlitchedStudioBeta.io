@@ -8,7 +8,7 @@ body {
 	color: white;
     font-size: 15px;
     font-family: Verdana;
-    animation: Theintroanim 2s 
+    animation: Theintroanim 2s;
 }
 
 .first-page {
@@ -62,7 +62,7 @@ body {
 
 .dot {
 	display: inline-block;
-	animation: dotsAnim 1s infinite ;
+	animation: dotsAnim 1.5s infinite ;
 }
 
 .firstdot {
@@ -77,7 +77,8 @@ body {
 	animation-delay: 1s;
 }
 
-.second-page {
+.line-page {
+	display: flex;
 	margin: 400px auto;
 	background: rgb(5, 5, 5, 1) center center;
 	box-shadow: 0 0 2px white,
@@ -85,20 +86,95 @@ body {
 	0 0 2px rgb(20,20,20,1)
 	0 0 2px rgb(20,20,20,1);
 	background-size: cover;
-	height: 300px;
+	height: 100px;
 	width: 80%;
 	border-radius: 15px;
 	animation: Theintroanim 2s  ;
 }
 
-.second-page h1 {
-	display: block;
+.line-page h1 {
+	margin: 30px auto auto;
 	text-align: center;
-	padding-top: 150px;
 	color: white;
-	font-size: 15px;
+	font-size: 30px;
 	font-family: monospace;
+	text-transform: uppercase;
 }
+
+
+.discordserverss {
+	animation: Theintroanim 2s;
+	display: block;
+    margin: -300px auto auto;
+    box-shadow: 0 0 1px white,
+    0 0 2px white,
+    0 0 4px white,
+    0 0 38px rgb(15, 15, 15, 1);
+    transition: 1s;
+	height: 500px;
+	width: auto;
+	animation: Theintroanim 2s  ;
+}
+
+.discordserverss:hover {
+	transition: 1s;
+	opacity: 0.8;
+	box-shadow: 0 0 11px white,
+    0 0 12px white,
+    0 0 14px black,
+    0 0 38px rgb(15, 15, 15, 1);
+}
+
+.discordserverss-title {
+	display: block;
+	margin: 30px auto auto;
+	color: white;
+   font-family: 'monospace', Verdana;
+   text-transform: uppercase;
+   font-size: 20px;
+   text-align: center;
+   animation: Theintroanim 2s  ;
+
+}
+
+.discordserverss-desc {
+	display: block;
+	margin: 5px auto auto;
+	color: white;
+   font-family: Verdana;
+   text-transform: uppercase;
+   font-size: 15px;
+   text-align: center;
+   animation: Theintroanim 2s  ;
+
+}
+
+
+.discordlink {
+	display: block;
+	margin: 15px auto auto;
+	color: white;
+	border: 5px solid rgb(15, 15, 15, 0.5);
+	padding-top:  5px;
+	padding-bottom: 5px;
+	border-radius: 15px;
+   font-family: Verdana;
+   text-transform: uppercase;
+   font-size: 15px;
+   text-align: center;
+   width: 50%;
+   text-decoration: none;
+   transition: 1s;
+animation: Theintroanim 2s  ;
+}
+
+.discordlink:hover {
+	transition: 1s;
+	border: 5px solid rgb(255, 255, 255, 1);
+}
+
+
+
 
 
 /* Animations */
@@ -129,3 +205,12 @@ body {
 	}
 }
 
+/* Media, Responsive */
+
+/* Tablet, Mini Laptop, and Mobile */
+@media (min-width: 320px) and (max-width: 833px) {
+	.discordserverss {
+height: 250px;
+width: auto;
+	}
+}
